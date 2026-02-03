@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Mulish;
+  src: url(/src/assets/font/Mulish-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: MulishBold;
+  src: url(/src/assets/font/Mulish-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: MulishLight;
+  src: url(/src/assets/font/Mulish-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: MulishLighter;
+  src: url(/src/assets/font/Mulish-ExtraLight.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ececec;
+  font-family: MulishLight, sans-serif;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  /* background: #040510; */ /* base por si falla algo */
+  color: white;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  /* background: radial-gradient(
+    1200px 800px at 50% 35%,
+    #171d35 0%,
+    #0b0f20 55%,
+    #03040c 100%
+  ); */
+
+  pointer-events: none;
+}
+.title {
+  font-size: 4.5rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 5.5rem;
+  text-align: center;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem;
+  width: 100%;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.61),
+    transparent
+  );
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+  opacity: 0.9;
+}
+@media (max-width: 992px) {
+  .title{
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .title{
+    font-size: 3rem;
+  }
+}

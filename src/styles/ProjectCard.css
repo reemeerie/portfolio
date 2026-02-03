@@ -1,0 +1,109 @@
+.projectCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 0.1rem solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  min-height: 340px;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.45);
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projectCard:hover {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 0 0.1rem rgba(255, 255, 255, 0.089),
+    0 2.5rem 8rem rgba(0, 0, 0, 0.55),
+    0 0 3rem rgba(255, 255, 255, 0.048);
+}
+.projectCardHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.projectCardName {
+  margin: 0;
+  font-family: Mulish, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.92);
+}
+.projectCardIcon{
+  width: 3rem;
+  height: 3rem;
+}
+.projectCardMeta {
+  margin: 2rem 0 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Mulish, sans-serif;
+}
+.projectCardMetaRole {
+  color: rgba(255, 255, 255, 0.75);
+}
+.projectCardDesc {
+  margin: 1.8rem 0 0;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Mulish, sans-serif;
+}
+.projectCardStack {
+  margin-top: 2rem;
+}
+.projectCardStackLabel {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: Mulish, sans-serif;
+}
+.projectCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.tag {
+  font-size: 1.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  border: 0.1rem solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.7);
+}
+.projectCardFooter {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.3rem;
+  font-family: Mulish, sans-serif;
+  transition:
+    color 150ms ease,
+    transform 150ms ease;
+}
+.projectLink:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.projectLink:active {
+  transform: translateY(0.1rem);
+}
+.projectLinkRight {
+  justify-content: flex-end;
+}
