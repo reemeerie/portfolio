@@ -22,7 +22,7 @@
 }
 .projectCardHeader {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1.5rem;
 }
@@ -107,3 +107,4 @@
 .projectLinkRight {
   justify-content: flex-end;
 }
+

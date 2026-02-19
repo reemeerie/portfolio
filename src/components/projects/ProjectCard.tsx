@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
 import { ArrowSquareOutIcon, GithubLogoIcon } from "@phosphor-icons/react"
-import ReactIcon from "../../assets/icons/react.svg"
 import { useMemo } from "react"
 import type { Project } from "../../utils/Project"
 import "../../styles/ProjectCard.css"
@@ -29,7 +28,7 @@ export const ProjectCard = ({ project }: { project: Project }) => {
       <div>
         <header className="projectCardHeader">
           <h3 className="projectCardName">{project.title}</h3>
-          <img src={ReactIcon} alt="" className="projectCardIcon" />
+          <img src={project.techIcon} alt="" className="projectCardIcon" />
         </header>
 
         <p className="projectCardMeta">

@@ -42,11 +42,10 @@ export const About = () => {
           Un poco sobre mí
         </motion.h3>
         <RevealText
-          text="Hello! I'm Thomas, a driven Full Stack Developer with a strong foundation in
-          computer science and a knack for crafting efficient, user-centric applications.
-          My journey into tech is fueled by a desire to learn, innovate, and
-          contribute to projects that make a difference.
-          I thrive in collaborative environments and am always excited to tackle new challenges."
+          text="¡Hola! Soy Thomas, un Desarrollador Full Stack motivado por el aprendizaje constante
+          y la creación de soluciones digitales eficientes, funcionales, escalables y estéticas.
+          Me apasiona desarrollar aplicaciones centradas en el usuario, aplicar buenas prácticas
+          y seguir creciendo en entornos tanto colaborativos como competitivos, donde cada desafío es una oportunidad para mejorar."
           step={1}
           range={0.75}
         />

@@ -101,18 +101,19 @@ export const Hero = ({ mp4Src }: Props) => {
         </motion.div>
 
         <motion.p className="heroDesc" variants={item}>
-          Innovative Full Stack Developer passionate about creating seamless and
-          impactful web solutions. Eager to leverage modern technologies to
-          solve real-world problems and contribute to dynamic team environments.
+          Desarrollador Full Stack apasionado por crear soluciones
+          web fluidas y escalables. Enfocado en aprovechar tecnologías
+          modernas para resolver problemas reales y aportar valor en entornos de
+          trabajo dinámicos.
         </motion.p>
 
         <motion.div className="heroActions" variants={item}>
           <a className="btn btnPrimary" href="#projects">
-            View My Work
+            Mis Trabajos
           </a>
           <a className="btn btnGhost" href="/Thomas_Reemeerie_CV.pdf" download>
             <DownloadSimpleIcon size={32} />
-            Download CV
+            Descargar CV
           </a>
         </motion.div>
 
