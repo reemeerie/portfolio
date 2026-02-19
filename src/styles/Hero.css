@@ -1,6 +1,8 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
+  min-height: 100svh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -12,11 +14,13 @@
 /* Background layer */
 .heroBg {
   position: fixed; /* para que no corte al scrollear */
+  overflow: hidden;
   inset: 0;
   z-index: -2;
 }
 .heroVideo {
   position: absolute;
+  overflow: hidden;
   inset: 0;
   width: 100%;
   height: 100%;
@@ -67,6 +71,8 @@
 }
 .heroType {
   margin-top: 1rem;
+  line-height: 1.15;
+  
   display: inline-flex;
   align-items: baseline;
   gap: 0.6rem;
@@ -172,9 +178,9 @@
   transform: translateY(0.1rem);
 }
 .heroDown {
-  position: absolute;
-  padding-right: 10rem;
-  bottom: 10rem;
+  /* position: absolute; */
+  /* padding-right: 10rem; */
+  /* bottom: 10rem; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -196,5 +202,11 @@
       #070915 55%,
       #040510 100%
     );
+  }
+}
+@media (max-width: 420px) {
+  .heroType{
+    margin-top: 2rem;
+    min-height: calc(2 * 1.15em);
   }
 }

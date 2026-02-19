@@ -7,14 +7,15 @@ import "../../styles/Projects.css"
 export const Projects = () => {
   const ref = useRef<HTMLDivElement | null>(null)
 
-  const inView = useInView(ref, { once: true, amount: 0.25 })
+  const inView = useInView(ref, { once: true, amount: 0.1 })
 
   const container = useMemo(
     () => ({
-      hidden: {},
+      hidden: { opacity: 1 },
       show: {
+        opacity: 1,
         transition: {
-          staggerChildren: 0.08,
+          staggerChildren: 0.06,
           delayChildren: 0.1,
         },
       },
@@ -24,7 +25,7 @@ export const Projects = () => {
 
   const title = useMemo(
     () => ({
-      hidden: { opacity: 0, y: 16, filter: "blur(10px)" },
+      hidden: { opacity: 0, y: 14, filter: "blur(8px)" },
       show: {
         opacity: 1,
         y: 0,
@@ -47,6 +48,7 @@ export const Projects = () => {
         variants={container}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
+        id="projects"
       >
         <motion.h3 className="title" variants={title}>
           Algunos proyectos en los que estuve trabajando

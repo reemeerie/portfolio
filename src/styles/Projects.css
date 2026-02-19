@@ -1,8 +1,5 @@
 .projects {
   padding: 10rem 4rem;
-  background: radial-gradient(circle, #070915 0%, #070915 55%, #040510 100%);
-  color: rgba(255, 255, 255, 0.9);
-  background: transparent;
 }
 .projectsWrapper {
   max-width: 1200px;
